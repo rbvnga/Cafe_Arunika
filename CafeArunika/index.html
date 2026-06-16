@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arunika Café & Coworking Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="nav-logo" onclick="showPage('home')">
+      <div class="nav-logo-mark">
+      <img src="LogoArunikaWithBG.jpeg" alt="Logo Arunika">
+        </div>
+      <div class="nav-logo-text">
+        <span class="name">ARUNIKA</span>
+        <span class="sub">Cafe &amp; Coworking Space</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a data-page="home"    onclick="showPage('home')">Home</a>
+      <a data-page="menu"    onclick="showPage('menu')">Menu</a>
+      <a data-page="booking" onclick="showPage('booking')">Booking</a>
+      <a data-page="library" onclick="showPage('library')">Library</a>
+      <a data-page="about"   onclick="showPage('about')">About</a>
+      <a data-page="contact" onclick="showPage('contact')">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-outline-light" onclick="showPage('login')">Login</button>
+      <button class="btn btn-gold"          onclick="showPage('signup')">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== PAGE: HOME ===================== -->
+<div class="page active" id="page-home">
+
+  <section class="hero-home">
+    <div class="container">
+      <div class="hero-home-content">
+        <span class="hero-eyebrow">✨ Cafe & Coworking Space</span>
+        <h1>WORK.<br>SIP.<br><span class="accent">INSPIRE.</span></h1>
+        <p>Cafe & Coworking Space untuk produktivitas tanpa batas, dengan rasa yang istimewa.</p>
+        <div class="hero-home-btns">
+          <button class="btn btn-gold"         onclick="showPage('booking')">📅 Booking Ruangan</button>
+          <button class="btn btn-outline-light" onclick="showPage('menu')">☕ Lihat Menu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-strip">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">☕</div>
+          <div class="feature-text">
+            <div class="ft-title">Great Coffee</div>
+            <div class="ft-desc">Racikan kopi berkualitas dari biji pilihan</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📚</div>
+          <div class="feature-text">
+            <div class="ft-title">Book &amp; Library</div>
+            <div class="ft-desc">Ratusan buku bebas dibaca di tempat</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏠</div>
+          <div class="feature-text">
+            <div class="ft-title">Private Room</div>
+            <div class="ft-desc">Ruang meeting &amp; workshop nyaman</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📶</div>
+          <div class="feature-text">
+            <div class="ft-title">Fast Wi-Fi</div>
+            <div class="ft-desc">Internet cepat untuk kerja &amp; belajar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Pilihan Favorit</span>
+          <h2>Featured Menu</h2>
+        </div>
+        <a class="link-arrow" onclick="showPage('menu')">Lihat Semua Menu →</a>
+      </div>
+      <div class="grid-4">
+        <div class="menu-card">
+            <div class="menu-card-img">
+            <img src="Kopi Arunika.jpg" alt="Arunika Coffee" />
+            </div>
+          <div class="menu-card-info">
+            <div class="mc-name">Arunika Coffee</div>
+            <div class="mc-sub">Signature Blend</div>
+            <div class="mc-bottom"><span class="mc-price">Rp26.000</span><span class="mc-rating">★ 4.8</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+            <div class="menu-card-img matcha">
+                <img src="Matcha Latte.jpg" alt="Matcha Latte" />
+            </div>
+          <div class="menu-card-info">
+            <div class="mc-name">Matcha Latte</div>
+            <div class="mc-sub">Premium Matcha</div>
+            <div class="mc-bottom"><span class="mc-price">Rp32.000</span><span class="mc-rating">★ 4.9</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img dessert">🍰</div>
+          <div class="menu-card-info">
+            <div class="mc-name">Cheesecake</div>
+            <div class="mc-sub">Foodtober Special</div>
+            <div class="mc-bottom"><span class="mc-price">Rp36.000</span><span class="mc-rating">★ 4.7</span></div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img food">🍝</div>
+          <div class="menu-card-info">
+            <div class="mc-name">Chicken Aglio Olio</div>
+            <div class="mc-sub">House Specialty</div>
+            <div class="mc-bottom"><span class="mc-price">Rp38.000</span><span class="mc-rating">★ 4.6</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-pale">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Coworking Space</span>
+          <h2>Booking Ruangan</h2>
+          <p>Pilih ruang yang sesuai kebutuhanmu</p>
+        </div>
+        <button class="btn btn-dark" onclick="showPage('booking')">Lihat Semua Ruangan</button>
+      </div>
+      <div class="grid-3">
+        <div class="room-card">
+          <div class="room-card-img small-room">🪑</div>
+          <div class="room-card-info">
+            <div class="rn">Small Room</div>
+            <div class="rm"><span>2–4 Orang</span><span class="rp">Rp25.000<small>/jam</small></span></div>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-card-img med-room">🛋️</div>
+          <div class="room-card-info">
+            <div class="rn">Medium Room</div>
+            <div class="rm"><span>4–8 Orang</span><span class="rp">Rp50.000<small>/jam</small></span></div>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-card-img lrg-room">🏛️</div>
+          <div class="room-card-info">
+            <div class="rn">Large Room</div>
+            <div class="rm"><span>8–12 Orang</span><span class="rp">Rp100.000<small>/jam</small></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sip-banner">
+        <div class="sip-text">
+          <span class="eyebrow" style="color:#9fd9c0;">Library Corner</span>
+          <h2>Read While You Sip</h2>
+          <p>Nikmati kopi sambil membaca koleksi buku terbaik kami — gratis untuk semua pengunjung.</p>
+          <button class="btn btn-gold" style="margin-top:22px;" onclick="showPage('library')">Jelajahi Koleksi</button>
+        </div>
+        <div class="sip-books">
+          <div class="sip-book b1">Atomic Habits</div>
+          <div class="sip-book b2">Psychology of Money</div>
+          <div class="sip-book b3">Deep Work</div>
+          <div class="sip-book b4">Sapiens</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom:80px;">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Testimoni</span>
+          <h2>Apa Kata Mereka?</h2>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Tempat terbaik untuk kerja dan meeting. Kopinya juga enak!</p>
+          <div class="testi-person">
+            <div class="testi-avatar av1">BP</div>
+            <div><div class="testi-name">Bima Pratama</div><div class="testi-role">Freelancer</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Suasana nyaman, wifi kencang, dan staff super ramah.</p>
+          <div class="testi-person">
+            <div class="testi-avatar av2">AP</div>
+            <div><div class="testi-name">Anisa Putri</div><div class="testi-role">Mahasiswa</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Room-nya oke banget, cocok buat workshop dan diskusi tim.</p>
+          <div class="testi-person">
+            <div class="testi-avatar av3">DF</div>
+            <div><div class="testi-name">Dimas Fahrezi</div><div class="testi-role">Startup Founder</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== PAGE: MENU ===================== -->
+<div class="page" id="page-menu">
+  <section class="subhero">
+    <div class="container subhero-inner">
+      <h1>Our Menu</h1>
+      <div class="crumb"><a onclick="showPage('home')">Home</a> / Menu</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="cat-tabs">
+        <button class="cat-tab active" onclick="filterMenu('semua',this)">Semua</button>
+        <button class="cat-tab" onclick="filterMenu('coffee',this)">Coffee</button>
+        <button class="cat-tab" onclick="filterMenu('noncoffee',this)">Non Coffee</button>
+        <button class="cat-tab" onclick="filterMenu('food',this)">Food</button>
+        <button class="cat-tab" onclick="filterMenu('snack',this)">Snack</button>
+        <button class="cat-tab" onclick="filterMenu('dessert',this)">Dessert</button>
+      </div>
+
+      <div class="menu-section" data-cat="coffee">
+        <div class="menu-section-head"><h3>Coffee</h3><a class="link-arrow">Lihat Semua →</a></div>
+        <div class="grid-4">
+          <div class="menu-card"><div class="menu-card-img kopi">☕</div><div class="menu-card-info"><div class="mc-name">Arunika Coffee</div><div class="mc-sub">Signature Blend</div><div class="mc-bottom"><span class="mc-price">Rp26.000</span><span class="mc-rating">★ 4.8</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img kopi">☕</div><div class="menu-card-info"><div class="mc-name">Cappuccino</div><div class="mc-sub">Espresso & Milk Foam</div><div class="mc-bottom"><span class="mc-price">Rp28.000</span><span class="mc-rating">★ 4.7</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img kopi">☕</div><div class="menu-card-info"><div class="mc-name">Latte</div><div class="mc-sub">Smooth & Creamy</div><div class="mc-bottom"><span class="mc-price">Rp30.000</span><span class="mc-rating">★ 4.8</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img kopi">☕</div><div class="menu-card-info"><div class="mc-name">Americano</div><div class="mc-sub">Bold & Simple</div><div class="mc-bottom"><span class="mc-price">Rp25.000</span><span class="mc-rating">★ 4.5</span></div></div></div>
+        </div>
+      </div>
+
+      <div class="menu-section" data-cat="noncoffee">
+        <div class="menu-section-head"><h3>Non Coffee</h3><a class="link-arrow">Lihat Semua →</a></div>
+        <div class="grid-4">
+          <div class="menu-card"><div class="menu-card-img nonkopi">🍵</div><div class="menu-card-info"><div class="mc-name">Matcha Latte</div><div class="mc-sub">Premium Matcha</div><div class="mc-bottom"><span class="mc-price">Rp32.000</span><span class="mc-rating">★ 4.9</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img nonkopi">🍫</div><div class="menu-card-info"><div class="mc-name">Chocolate</div><div class="mc-sub">Rich Cocoa</div><div class="mc-bottom"><span class="mc-price">Rp32.000</span><span class="mc-rating">★ 4.7</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img nonkopi">🍓</div><div class="menu-card-info"><div class="mc-name">Red Velvet</div><div class="mc-sub">Creamy & Sweet</div><div class="mc-bottom"><span class="mc-price">Rp32.000</span><span class="mc-rating">★ 4.8</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img nonkopi">🍋</div><div class="menu-card-info"><div class="mc-name">Lemonade</div><div class="mc-sub">Fresh & Refreshing</div><div class="mc-bottom"><span class="mc-price">Rp25.000</span><span class="mc-rating">★ 4.6</span></div></div></div>
+        </div>
+      </div>
+
+      <div class="menu-section" data-cat="food">
+        <div class="menu-section-head"><h3>Food</h3><a class="link-arrow">Lihat Semua →</a></div>
+        <div class="grid-4">
+          <div class="menu-card"><div class="menu-card-img food">🍝</div><div class="menu-card-info"><div class="mc-name">Chicken Aglio Olio</div><div class="mc-sub">House Specialty</div><div class="mc-bottom"><span class="mc-price">Rp38.000</span><span class="mc-rating">★ 4.6</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img food">🍔</div><div class="menu-card-info"><div class="mc-name">Beef Burger</div><div class="mc-sub">Juicy Beef Patty</div><div class="mc-bottom"><span class="mc-price">Rp45.000</span><span class="mc-rating">★ 4.7</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img food">🍗</div><div class="menu-card-info"><div class="mc-name">Chicken Steak</div><div class="mc-sub">With Mushroom Sauce</div><div class="mc-bottom"><span class="mc-price">Rp36.000</span><span class="mc-rating">★ 4.7</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img food">🍛</div><div class="menu-card-info"><div class="mc-name">Nasi Goreng</div><div class="mc-sub">Indonesian Fried Rice</div><div class="mc-bottom"><span class="mc-price">Rp32.000</span><span class="mc-rating">★ 4.6</span></div></div></div>
+        </div>
+      </div>
+
+      <div class="menu-section" data-cat="snack">
+        <div class="menu-section-head"><h3>Snack</h3><a class="link-arrow">Lihat Semua →</a></div>
+        <div class="grid-4">
+          <div class="menu-card"><div class="menu-card-img snack">🍟</div><div class="menu-card-info"><div class="mc-name">French Fries</div><div class="mc-sub">Crispy & Salty</div><div class="mc-bottom"><span class="mc-price">Rp20.000</span><span class="mc-rating">★ 4.5</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img snack">🧅</div><div class="menu-card-info"><div class="mc-name">Onion Rings</div><div class="mc-sub">Golden Crunch</div><div class="mc-bottom"><span class="mc-price">Rp22.000</span><span class="mc-rating">★ 4.4</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img snack">🍗</div><div class="menu-card-info"><div class="mc-name">Chicken Wings</div><div class="mc-sub">Spicy BBQ</div><div class="mc-bottom"><span class="mc-price">Rp28.000</span><span class="mc-rating">★ 4.6</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img snack">🥐</div><div class="menu-card-info"><div class="mc-name">Croissant</div><div class="mc-sub">Buttery & Flaky</div><div class="mc-bottom"><span class="mc-price">Rp24.000</span><span class="mc-rating">★ 4.5</span></div></div></div>
+        </div>
+      </div>
+
+      <div class="menu-section" data-cat="dessert">
+        <div class="menu-section-head"><h3>Dessert</h3><a class="link-arrow">Lihat Semua →</a></div>
+        <div class="grid-4">
+          <div class="menu-card"><div class="menu-card-img dessert">🍰</div><div class="menu-card-info"><div class="mc-name">Cheesecake</div><div class="mc-sub">Creamy & Smooth</div><div class="mc-bottom"><span class="mc-price">Rp36.000</span><span class="mc-rating">★ 4.8</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img dessert">🍮</div><div class="menu-card-info"><div class="mc-name">Tiramisu</div><div class="mc-sub">Coffee Layered</div><div class="mc-bottom"><span class="mc-price">Rp34.000</span><span class="mc-rating">★ 4.7</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img dessert">🍫</div><div class="menu-card-info"><div class="mc-name">Chocolate Cake</div><div class="mc-sub">Rich & Decadent</div><div class="mc-bottom"><span class="mc-price">Rp36.000</span><span class="mc-rating">★ 4.7</span></div></div></div>
+          <div class="menu-card"><div class="menu-card-img dessert">🍨</div><div class="menu-card-info"><div class="mc-name">Panna Cotta</div><div class="mc-sub">Light & Silky</div><div class="mc-bottom"><span class="mc-price">Rp30.000</span><span class="mc-rating">★ 4.6</span></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== PAGE: BOOKING ===================== -->
+<div class="page" id="page-booking">
+  <section class="subhero">
+    <div class="container subhero-inner">
+      <h1>Booking Ruangan</h1>
+      <div class="crumb"><a onclick="showPage('home')">Home</a> / Booking</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="booking-filters">
+        <div class="filter-field">
+          <label>Pilih Tanggal</label>
+          <input type="date" id="booking-date" value="2026-06-20">
+        </div>
+        <div class="filter-field">
+          <label>Pilih Waktu</label>
+          <select id="booking-time">
+            <option>10:00 - 12:00</option>
+            <option>13:00 - 15:00</option>
+            <option>15:00 - 17:00</option>
+            <option>19:00 - 21:00</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label>Durasi</label>
+          <select id="booking-dur">
+            <option value="1">1 Jam</option>
+            <option value="2" selected>2 Jam</option>
+            <option value="3">3 Jam</option>
+            <option value="4">4 Jam</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="booking-layout">
+        <div class="room-list">
+          <div class="room-list-card" onclick="selectRoom('Small Room',25000)">
+            <div class="rli small-room">🪑</div>
+            <div class="rli-info">
+              <div class="rli-top"><span class="rli-name">Small Room</span><span class="rli-price">Rp25.000<small>/jam</small></span></div>
+              <div class="rli-cap">👥 2–4 Orang</div>
+              <div class="rli-tags">
+                <span class="tag">📶 Wi-Fi</span>
+                <span class="tag">❄️ AC</span>
+                <span class="tag">🔌 Stop Kontak</span>
+              </div>
+            </div>
+          </div>
+          <div class="room-list-card" onclick="selectRoom('Medium Room',50000)">
+            <div class="rli med-room">🛋️</div>
+            <div class="rli-info">
+              <div class="rli-top"><span class="rli-name">Medium Room</span><span class="rli-price">Rp50.000<small>/jam</small></span></div>
+              <div class="rli-cap">👥 4–8 Orang</div>
+              <div class="rli-tags">
+                <span class="tag">📶 Wi-Fi</span>
+                <span class="tag">❄️ AC</span>
+                <span class="tag">📺 Proyektor</span>
+              </div>
+            </div>
+          </div>
+          <div class="room-list-card" onclick="selectRoom('Large Room',100000)">
+            <div class="rli lrg-room">🏛️</div>
+            <div class="rli-info">
+              <div class="rli-top"><span class="rli-name">Large Room</span><span class="rli-price">Rp100.000<small>/jam</small></span></div>
+              <div class="rli-cap">👥 8–12 Orang</div>
+              <div class="rli-tags">
+                <span class="tag">📶 Wi-Fi</span>
+                <span class="tag">❄️ AC</span>
+                <span class="tag">📺 Proyektor</span>
+              </div>
+            </div>
+          </div>
+          <div class="room-list-card" onclick="selectRoom('VIP Room',150000)">
+            <div class="rli vip-room">👑</div>
+            <div class="rli-info">
+              <div class="rli-top"><span class="rli-name">VIP Room</span><span class="rli-price">Rp150.000<small>/jam</small></span></div>
+              <div class="rli-cap">👥 3–10 Orang</div>
+              <div class="rli-tags">
+                <span class="tag">📶 Wi-Fi</span>
+                <span class="tag">❄️ AC</span>
+                <span class="tag">🍿 Snack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <h3 class="sum-title">Ringkasan Booking</h3>
+          <div class="sum-row"><span class="sum-icon">🏠</span><div><div class="sum-lbl">Ruangan</div><div class="sum-val" id="sum-room">Small Room</div></div></div>
+          <div class="sum-row"><span class="sum-icon">📅</span><div><div class="sum-lbl">Tanggal</div><div class="sum-val" id="sum-date">20 Jun 2026</div></div></div>
+          <div class="sum-row"><span class="sum-icon">🕙</span><div><div class="sum-lbl">Waktu · Durasi</div><div class="sum-val" id="sum-time">10:00–12:00 · 2 Jam</div></div></div>
+          <div class="sum-divider"></div>
+          <div class="sum-total-row">
+            <span class="stl">Total</span>
+            <span class="stv" id="sum-total">Rp50.000</span>
+          </div>
+          <button class="btn btn-green btn-block" onclick="alert('Demo: fitur pembayaran belum aktif.')">Lanjutkan Pembayaran</button>
+          <ul class="sum-notes">
+            <li>Pembatalan gratis hingga 2 jam sebelum waktu mulai.</li>
+            <li>Konfirmasi instan setelah pembayaran.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== PAGE: LIBRARY ===================== -->
+<div class="page" id="page-library">
+  <section class="subhero">
+    <div class="container subhero-inner">
+      <h1>Library</h1>
+      <div class="crumb"><a onclick="showPage('home')">Home</a> / Library</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="lib-toolbar">
+        <div class="lib-search">
+          <span>🔍</span>
+          <input type="text" placeholder="Cari buku atau penulis...">
+        </div>
+        <select class="lib-select">
+          <option>Semua Kategori</option>
+          <option>Produktivitas</option>
+          <option>Bisnis</option>
+          <option>Sains</option>
+          <option>Sejarah</option>
+          <option>Fiksi</option>
+        </select>
+      </div>
+
+      <div class="book-grid">
+        <div class="book-card"><div class="book-cover bc1">Atomic Habits</div><div class="book-info"><div class="bk-name">Atomic Habits</div><div class="bk-author">James Clear</div></div></div>
+        <div class="book-card"><div class="book-cover bc2">The Psychology of Money</div><div class="book-info"><div class="bk-name">The Psychology of Money</div><div class="bk-author">Morgan Housel</div></div></div>
+        <div class="book-card"><div class="book-cover bc3">Deep Work</div><div class="book-info"><div class="bk-name">Deep Work</div><div class="bk-author">Cal Newport</div></div></div>
+        <div class="book-card"><div class="book-cover bc4">Sapiens</div><div class="book-info"><div class="bk-name">Sapiens</div><div class="bk-author">Yuval Noah Harari</div></div></div>
+        <div class="book-card"><div class="book-cover bc5">Thinking Fast and Slow</div><div class="book-info"><div class="bk-name">Thinking, Fast and Slow</div><div class="bk-author">Daniel Kahneman</div></div></div>
+        <div class="book-card"><div class="book-cover bc6">Why We Sleep</div><div class="book-info"><div class="bk-name">Why We Sleep</div><div class="bk-author">Matthew Walker</div></div></div>
+        <div class="book-card"><div class="book-cover bc7">The 5AM Club</div><div class="book-info"><div class="bk-name">The 5 AM Club</div><div class="bk-author">Robin Sharma</div></div></div>
+        <div class="book-card"><div class="book-cover bc8">Ikigai</div><div class="book-info"><div class="bk-name">Ikigai</div><div class="bk-author">Héctor García</div></div></div>
+      </div>
+
+      <div class="lib-stats">
+        <div class="lib-stat"><span class="ls-icon">📚</span><div><div class="ls-val">300+</div><div class="ls-lbl">Koleksi Buku</div></div></div>
+        <div class="lib-stat"><span class="ls-icon">🗂️</span><div><div class="ls-val">20+</div><div class="ls-lbl">Kategori</div></div></div>
+        <div class="lib-stat"><span class="ls-icon">📖</span><div><div class="ls-val">Bebas</div><div class="ls-lbl">Dibaca di Tempat</div></div></div>
+        <div class="lib-stat"><span class="ls-icon">🎁</span><div><div class="ls-val">Gratis</div><div class="ls-lbl">Untuk Member</div></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== PAGE: ABOUT ===================== -->
+<div class="page" id="page-about">
+  <section class="subhero">
+    <div class="container subhero-inner">
+      <h1>About Us</h1>
+      <div class="crumb"><a onclick="showPage('home')">Home</a> / About</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-visual">
+          <div class="about-img-box">☕<br><span>Since 2020</span></div>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Cerita Kami</span>
+          <h2>Lebih dari Sekadar Kafe</h2>
+          <p>Arunika lahir dari keyakinan bahwa produktivitas dan kenyamanan bisa berjalan beriringan. Kami percaya setiap orang berhak atas ruang yang mendukung kreativitas, kolaborasi, dan ketenangan pikiran.</p>
+          <p style="margin-top:16px;">Nama "Arunika" terinspirasi dari cahaya kemerahan saat fajar — simbol semangat, harapan, dan awal yang baru. Sama seperti fajar, kami hadir untuk menyambut hari-harimu dengan energi terbaik.</p>
+          <div class="about-stats">
+            <div class="as-item"><div class="as-val">500+</div><div class="as-lbl">Pelanggan Setia</div></div>
+            <div class="as-item"><div class="as-val">4</div><div class="as-lbl">Jenis Ruangan</div></div>
+            <div class="as-item"><div class="as-val">300+</div><div class="as-lbl">Koleksi Buku</div></div>
+            <div class="as-item"><div class="as-val">50+</div><div class="as-lbl">Varian Menu</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== PAGE: CONTACT ===================== -->
+<div class="page" id="page-contact">
+  <section class="subhero">
+    <div class="container subhero-inner">
+      <h1>Contact</h1>
+      <div class="crumb"><a onclick="showPage('home')">Home</a> / Contact</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="eyebrow">Temukan Kami</span>
+          <h2>Kunjungi Kami</h2>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div><div class="ci-label">Alamat</div><div class="ci-val">Jl. Contoh No. 123,<br>Surabaya, Jawa Timur</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div><div class="ci-label">Hubungi Kami</div><div class="ci-val">(031) 1234 5678<br>hello@arunika.id</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">🕐</div>
+            <div><div class="ci-label">Jam Operasional</div><div class="ci-val">Senin–Jumat: 08:00–21:00<br>Sabtu–Minggu: 09:00–23:00</div></div>
+          </div>
+          <div class="map-placeholder">🗺️<br><span>Google Maps</span><br><small>Jl. Contoh No. 123, Surabaya</small></div>
+        </div>
+        <div class="contact-form-box">
+          <h3>Kirim Pesan</h3>
+          <div class="form-group"><label>Nama Lengkap</label><input type="text" placeholder="Masukkan nama lengkap"></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="Masukkan email"></div>
+          <div class="form-group"><label>Subjek</label><input type="text" placeholder="Subjek pesan"></div>
+          <div class="form-group"><label>Pesan Anda</label><textarea rows="5" placeholder="Tulis pesanmu di sini..."></textarea></div>
+          <button class="btn btn-green btn-block" onclick="alert('Pesan terkirim! (Demo)')">Kirim Pesan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== PAGE: LOGIN ===================== -->
+<div class="page" id="page-login">
+  <div class="auth-page">
+    <div class="auth-bg"></div>
+    <div class="auth-box">
+      <div class="auth-logo" onclick="showPage('home')">
+        <div class="nav-logo-mark">A</div>
+        <div class="nav-logo-text">
+          <span class="name" style="color:var(--brown-dark)">ARUNIKA</span>
+          <span class="sub" style="color:var(--text-muted)">Cafe &amp; Coworking Space</span>
+        </div>
+      </div>
+      <h2 class="auth-title">Welcome Back!</h2>
+      <p class="auth-sub">Login untuk melanjutkan</p>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="Masukkan email"></div>
+      <div class="form-group"><label>Password</label><div class="pass-wrap"><input type="password" placeholder="Masukkan password"><span class="pass-eye">👁</span></div><a class="forgot-link">Lupa password?</a></div>
+      <button class="btn btn-dark btn-block" onclick="alert('Login (Demo)')">Login</button>
+      <div class="auth-or"><span>atau</span></div>
+      <div class="auth-social">
+        <button class="social-btn">G</button>
+        <button class="social-btn">🍎</button>
+        <button class="social-btn">f</button>
+      </div>
+      <p class="auth-switch">Belum punya akun? <a onclick="showPage('signup')">Sign Up</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE: SIGNUP ===================== -->
+<div class="page" id="page-signup">
+  <div class="auth-page">
+    <div class="auth-bg"></div>
+    <div class="auth-box">
+      <div class="auth-logo" onclick="showPage('home')">
+        <div class="nav-logo-mark">A</div>
+        <div class="nav-logo-text">
+          <span class="name" style="color:var(--brown-dark)">ARUNIKA</span>
+          <span class="sub" style="color:var(--text-muted)">Cafe &amp; Coworking Space</span>
+        </div>
+      </div>
+      <h2 class="auth-title">Create Account</h2>
+      <p class="auth-sub">Daftar untuk memulai</p>
+      <div class="form-group"><label>Nama Lengkap</label><input type="text" placeholder="Masukkan nama lengkap"></div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="Masukkan email"></div>
+      <div class="form-group"><label>Password</label><div class="pass-wrap"><input type="password" placeholder="Buat password"><span class="pass-eye">👁</span></div></div>
+      <div class="form-group"><label>Konfirmasi Password</label><input type="password" placeholder="Konfirmasi password"></div>
+      <label class="tos-row"><input type="checkbox"> Saya setuju dengan <a href="#">Terms &amp; Conditions</a></label>
+      <button class="btn btn-dark btn-block" onclick="alert('Akun dibuat! (Demo)')">Sign Up</button>
+      <div class="auth-or"><span>atau</span></div>
+      <div class="auth-social">
+        <button class="social-btn">G</button>
+        <button class="social-btn">🍎</button>
+        <button class="social-btn">f</button>
+      </div>
+      <p class="auth-switch">Sudah punya akun? <a onclick="showPage('login')">Login</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="nav-logo" style="cursor:default">
+          <div class="nav-logo-mark">A</div>
+          <div class="nav-logo-text">
+            <span class="name">ARUNIKA</span>
+            <span class="sub">Cafe &amp; Coworking Space</span>
+          </div>
+        </div>
+        <div class="foot-tagline">Work · Sip · Inspire</div>
+      </div>
+      <div class="foot-col">
+        <h4>Menu</h4>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('menu')">Menu</a>
+        <a onclick="showPage('booking')">Booking</a>
+        <a onclick="showPage('library')">Library</a>
+        <a onclick="showPage('about')">About</a>
+        <a onclick="showPage('contact')">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Layanan</h4>
+        <a onclick="showPage('booking')">Booking Ruangan</a>
+        <a onclick="showPage('library')">Daftar Buku</a>
+        <a href="#">Membership</a>
+        <a href="#">Event</a>
+      </div>
+      <div class="foot-col">
+        <h4>Kontak</h4>
+        <p>Jl. Contoh No. 123,<br>Surabaya, Jawa Timur</p>
+        <p>(031) 1234 5678</p>
+        <p>hello@arunika.id</p>
+      </div>
+      <div class="foot-col">
+        <h4>Ikuti Kami</h4>
+        <div class="foot-social">
+          <a href="#" class="fs-btn">IG</a>
+          <a href="#" class="fs-btn">FB</a>
+          <a href="#" class="fs-btn">TW</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Arunika Café &amp; Coworking Space. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
