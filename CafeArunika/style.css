@@ -121,12 +121,34 @@ p     { line-height: 1.7; }
    PAGE: HOME
 =========================== */
 /* Hero */
-.hero-home         { position: relative; min-height: 580px; display: flex; align-items: center; overflow: hidden; }
+.hero-home {
+  background-image: url("images/Cafe.png"); /* ganti dengan lokasi file foto */
+  background-size: cover;      /* biar foto menutupi seluruh area */
+  background-position: center; /* foto diposisikan di tengah */
+  background-repeat: no-repeat;/* jangan diulang */
+  color: #fff;                 /* pastikan teks tetap terlihat jelas */
+  padding: 80px 0;             /* beri ruang atas-bawah */
+}
+.hero-home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* ganti gradient jadi transparan gelap */
+}
+
+.hero-home::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 75% 50%, transparent, rgba(20,10,2,.35));
+}
+/*
 .hero-home::before { content: ''; position: absolute; inset: 0;
                      background: linear-gradient(115deg, var(--brown-dark) 0%, var(--brown-mid) 45%, #b6822f 85%, var(--gold) 130%); }
 .hero-home::after  { content: ''; position: absolute; inset: 0;
                      background: radial-gradient(circle at 75% 50%, transparent, rgba(20,10,2,.35)); }
-.hero-home-content { position: relative; z-index: 1; max-width: 560px; padding: 80px 0; }
+*/
+                     .hero-home-content { position: relative; z-index: 1; max-width: 560px; padding: 80px 0; }
 .hero-eyebrow      { display: inline-block; background: rgba(201,151,58,.15); border: 1px solid rgba(201,151,58,.4);
                      color: var(--gold); font-size: 11px; font-weight: 600; letter-spacing: 2px;
                      text-transform: uppercase; padding: 6px 16px; border-radius: 30px; margin-bottom: 22px; }
