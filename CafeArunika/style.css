@@ -228,7 +228,27 @@ p     { line-height: 1.7; }
 .sip-text h2  { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; margin-top: 6px; }
 .sip-text p   { color: rgba(255,255,255,.65); font-size: 14px; margin-top: 10px; }
 .sip-books    { display: flex; gap: 16px; flex-shrink: 0; }
-.sip-book     { width: 92px; height: 132px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+.sip-book {
+  width: 140px;       /* lebar card */
+  height: 200px;      /* tinggi card */
+  border-radius: 12px;
+  overflow: hidden;   /* biar gambar tidak keluar */
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.sip-book img {
+  width: 100%;
+  height: 100%;        /* gambar ambil 80% tinggi card */
+  object-fit: cover;  /* gambar menyesuaikan area card */
+  display: block;
+}
+/*.sip-book     { width: 92px; height: 132px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
                 text-align: center; font-size: 12px; font-weight: 600; padding: 10px; color: #fff;
                 font-family: 'Playfair Display', serif; box-shadow: 0 14px 30px rgba(0,0,0,.35);
                 transition: transform .3s; }
@@ -237,6 +257,7 @@ p     { line-height: 1.7; }
 .b2 { background: linear-gradient(135deg, #1A4A3A, #3DAB7B); }
 .b3 { background: linear-gradient(135deg, #1A1A6B, #5B7AC9); }
 .b4 { background: linear-gradient(135deg, #4A1A1A, #C94A3A); }
+*/
 
 /* Testimonials */
 .testi-card       { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 28px; }
